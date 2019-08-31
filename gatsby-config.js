@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hugo Fabricio`,
+    description: `Um desenvolvedor Full Stack, founder da BRZ Digital, apaixonado por tecnologia e com bastante experiência no desenvolvimento de interfaces fieis ao layout e sistemas baseados em Laravel, atualmente cursando Análise e Desenvolvimento de Sistemas na FIAP e em busca de novos desafios.`,
+    author: `@hugofabriicio`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
