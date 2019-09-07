@@ -15,17 +15,13 @@ const HeaderMenu = () => (
             to={link.url}
             activeClassName="active"
             title={link.label}
-            fade
-            duration={0.3}
           >
             {link.label}
           </S.HeaderMenuLink>
         </S.HeaderMenuItem>
       ))}
       <S.HeaderMenuItem>
-        <Button url="/contact" label="Let's Talk" activeClassName="active">
-          Let's Talk
-        </Button>
+        <Button url="/contact" label="Let's talk" activeClassName="active" />
       </S.HeaderMenuItem>
     </S.HeaderMenuList>
   </S.HeaderMenuWrapper>
