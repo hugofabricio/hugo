@@ -1,8 +1,7 @@
 import styled from "styled-components"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import { Link } from "gatsby"
-
-export const ButtonLink = styled(Link)`
+export const ButtonLink = styled(AniLink)`
   cursor: pointer;
   display: block;
   user-select: none;
@@ -12,8 +11,8 @@ export const ButtonLink = styled(Link)`
   letter-spacing: 0.125rem;
   line-height: 3.125rem;
   height: 3.125rem;
-  color: #fff;
-  background-color: #f61067;
+  color: var(--textColor);
+  background-color: var(--buttonBackground);
   text-decoration: none;
   text-align: center;
   border-radius: 2.25rem;
@@ -21,8 +20,15 @@ export const ButtonLink = styled(Link)`
   overflow: hidden;
   padding: 0 2.5rem;
 
+  &.active {
+    color: var(--buttonTextColorActive);
+    background-color: var(--buttonBackgroundActive);
+    pointer-events: none;
+  }
+
   &:hover {
-    background-color: #ff2477;
+    color: var(--buttonTextColorHover);
+    background-color: var(--buttonBackgroundHover);
   }
 `
 

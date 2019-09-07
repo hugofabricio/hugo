@@ -4,13 +4,13 @@ const links = [
     url: "/about",
   },
   {
-    label: "My Work",
+    label: "Portfolio",
     url: "/portfolio",
   },
-  {
-    label: "Blog",
-    url: "/blog",
-  },
+  // {
+  //   label: "Blog",
+  //   url: "/blog",
+  // },
 ]
 
 export default links

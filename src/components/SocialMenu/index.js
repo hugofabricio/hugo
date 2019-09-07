@@ -6,8 +6,9 @@ import links from "./content"
 
 import * as S from "./styled"
 
-const SocialMenu = ({ size }) => (
-  <S.SocialLinksWrapper>
+const SocialMenu = ({ showTitle, size, margin, fixed }) => (
+  <S.SocialLinksWrapper fixed={fixed} margin={margin}>
+    <S.SocialLinksTitle showTitle={showTitle}>Follow me</S.SocialLinksTitle>
     <S.SocialLinksList>
       {links.map((link, i) => {
         const Icon = Icons[link.label]
@@ -32,7 +33,10 @@ const SocialMenu = ({ size }) => (
 )
 
 SocialMenu.propTypes = {
+  showTitle: PropTypes.bool,
   size: PropTypes.number,
+  margin: PropTypes.string,
+  fixed: PropTypes.bool,
 }
 
 export default SocialMenu

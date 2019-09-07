@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { TransitionPortal } from "gatsby-plugin-transition-link"
 
 import Header from "../Header"
 import Footer from "../Footer"
@@ -11,7 +12,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles />
-      <Header />
+      <TransitionPortal level="top">
+        <Header />
+      </TransitionPortal>
+
       <S.LayoutMain>{children}</S.LayoutMain>
       <Footer />
     </>

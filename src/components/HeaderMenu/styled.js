@@ -1,9 +1,13 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const HeaderMenuWrapper = styled.nav`
   user-select: none;
   width: 550px;
+`
+
+export const HeaderMenuTitle = styled.h3`
+  display: none;
 `
 
 export const HeaderMenuList = styled.ul`
@@ -16,13 +20,10 @@ export const HeaderMenuList = styled.ul`
 
 export const HeaderMenuItem = styled.li`
   line-height: 3.125rem;
-  .active {
-    color: #f61067;
-  }
 `
 
-export const HeaderMenuLink = styled(Link)`
-  color: #fff;
+export const HeaderMenuLink = styled(AniLink)`
+  color: var(--textColor);
   font-size: 0.875rem;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
@@ -30,6 +31,11 @@ export const HeaderMenuLink = styled(Link)`
   transition: color 0.5s;
 
   &:hover {
-    color: #f61067;
+    color: var(--textColorHover);
+  }
+
+  &.active {
+    color: var(--textColorActive);
+    pointer-events: none;
   }
 `

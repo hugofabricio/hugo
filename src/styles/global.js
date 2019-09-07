@@ -28,9 +28,6 @@ const GlobalStyles = createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
-  body {
-    line-height: 1;
-  }
   ol, ul {
     list-style: none;
   }
@@ -46,19 +43,65 @@ const GlobalStyles = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
   body {
+    --color10: #fff;
+    --color19: #222;
+    --color20: #232532;
+    --color30: #FF2477;
+    --color31: #F61067;
+  }
+  body {
+    --background: var(--color20);
+    --textColor: var(--color10);
+    --textColorHover: var(--color31);
+    --textColorActive: var(--color31);
+    --buttonBackground: var(--color31);
+    --buttonBackgroundHover: var(--color30);
+    --buttonBackgroundActive: var(--color30);
+    --buttonTextColor: var(--color10);
+    --buttonTextColorHover: var(--color10);
+    --buttonTextColorActive: var(--color10);
+  }
+  body.pink {
+    --background: var(--color31);
+    --textColor: var(--color10);
+    --textColorHover: var(--color20);
+    --textColorActive: var(--color20);
+    --buttonBackground: var(--color30);
+    --buttonBackgroundHover: var(--color20);
+    --buttonBackgroundActive: var(--color30);
+    --buttonTextColor: var(--color10);
+    --buttonTextColorHover: var(--color10);
+    --buttonTextColorActive: var(--color10);
+  }
+  body {
+    padding-top: 240px;
     font-family: 'Montserrat', sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
     line-height: 1;
     font-size: 100%;
-    background-color: #232532;
+    color: var(--text);
+    background-color: var(--background);
+    margin: 0px;
   }
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
+  a,
+  button,
+  input[type="button"] {
+    transition: all .4s ease;
+  }
+  a {
+    color: var(--textColor);
+    text-decoration: none;
+    &:hover {
+      color: var(--textColorHover);
+    }
   }
 `
 
