@@ -3,6 +3,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const ButtonLink = styled(AniLink)`
   cursor: pointer;
+  white-space: nowrap;
   display: block;
   user-select: none;
   font-size: 0.875rem;
