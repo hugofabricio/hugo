@@ -9,7 +9,7 @@ import * as S from "./styled"
 const SocialMenu = ({ showTitle, size, margin, fixed }) => (
   <S.SocialLinksWrapper fixed={fixed} margin={margin}>
     <S.SocialLinksTitle showTitle={showTitle}>Follow me</S.SocialLinksTitle>
-    <S.SocialLinksList>
+    <S.SocialLinksList fixed={fixed}>
       {links.map((link, i) => {
         const Icon = Icons[link.label]
 

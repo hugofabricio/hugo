@@ -40,6 +40,10 @@ export const PortfolioSlogan = styled.p`
   color: var(--textColor);
   font-size: 1.125rem;
   line-height: 1.6;
+
+  ${media.lessThan("medium")`
+    font-size: 1rem;
+  `}
 `
 
 export const PortfolioContent = styled.article`

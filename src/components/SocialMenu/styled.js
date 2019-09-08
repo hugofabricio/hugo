@@ -10,7 +10,8 @@ export const SocialLinksWrapper = styled.div`
 
   ${media.lessThan("small")`
     position: relative;
-    bottom: ${props => (props.fixed ? "-2.5rem" : "0")};
+    margin-top: ${props => (props.fixed ? "4rem" : "0")};
+    bottom: 0
   `}
 `
 
@@ -28,7 +29,7 @@ export const SocialLinksList = styled.ul`
   display: flex;
   height: ${props => (props.size ? props.size : 30)}px;
   align-items: center;
-  justify-content: center;
+  justify-content: ${props => (props.fixed ? "center" : "flex-start")};
   list-style: none;
 `
 
