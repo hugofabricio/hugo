@@ -10,6 +10,10 @@ export const PortfolioWrapper = styled.section`
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("small")`
+    width: 80%;
+  `}
 `
 
 export const PortfolioHeader = styled.header`

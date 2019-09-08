@@ -10,6 +10,10 @@ export const AboutWrapper = styled.section`
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("small")`
+    width: 80%;
+  `}
 `
 
 export const AboutHeader = styled.header`

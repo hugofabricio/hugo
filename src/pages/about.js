@@ -10,7 +10,7 @@ const AboutPage = () => (
       <SEO title="About me" />
       <About
         title="Hello!"
-        slogan="I am a web developer with 8 years of experience delivering interface faithful to layout and semantically correct."
+        slogan="I have been working as a developer since 2009 and have a lot of experience in creating interfaces that are true to layout and semantically correct."
       />
     </Layout>
   </>

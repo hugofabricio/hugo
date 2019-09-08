@@ -5,7 +5,6 @@ export const WavesWrapper = styled.div`
   position: fixed;
   z-index: 1;
   width: 100%;
-  height: 60%;
   bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -13,6 +12,7 @@ export const WavesWrapper = styled.div`
   overflow: hidden;
 
   svg {
+    min-width: 100%;
     height: auto;
   }
 
@@ -24,7 +24,8 @@ export const WavesWrapper = styled.div`
 export const WavesWrapperLeft = styled.div`
   display: flex;
   justify-content: flex-start;
-  width: 50%;
+  align-items: flex-end;
+  width: 40%;
 
   ${media.lessThan("large")`
     width: 35%;
@@ -37,8 +38,9 @@ export const WavesWrapperLeft = styled.div`
 
 export const WavesWrapperRight = styled.div`
   display: flex;
+  align-items: flex-end;
   justify-content: flex-end;
-  width: 50%;
+  width: 40%;
 
   ${media.lessThan("large")`
     width: 35%;

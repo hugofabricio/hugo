@@ -10,6 +10,10 @@ export const ContactWrapper = styled.section`
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("small")`
+    width: 80%;
+  `}
 `
 
 export const ContactHeader = styled.header`
@@ -68,4 +72,8 @@ export const ContactCardLink = styled.a`
   font-size: 1.375rem;
   font-weight: 700;
   letter-spacing: 0.063rem;
+
+  ${media.lessThan("small")`
+    font-size: 1.25rem;
+  `}
 `

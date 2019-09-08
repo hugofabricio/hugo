@@ -1,6 +1,6 @@
 const links = [
   {
-    label: "About me",
+    label: "About",
     url: "/about",
   },
   {
