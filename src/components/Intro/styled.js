@@ -7,12 +7,13 @@ export const IntroWrapper = styled.section`
   user-select: none;
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   ${media.lessThan("medium")`
+    padding-bottom: 2rem;
     align-items: flex-start;
   `}
 `
