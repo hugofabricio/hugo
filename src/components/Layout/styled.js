@@ -7,6 +7,6 @@ export const LayoutMain = styled.main`
   overflow: hidden;
 
   ${media.lessThan("medium")`
-    min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 220px);
   `}
 `
