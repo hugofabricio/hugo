@@ -1,11 +1,17 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const SocialLinksWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   position: ${props => (props.fixed ? "absolute" : "relative")};
   z-index: 2;
-  bottom: ${props => (props.fixed ? "2rem" : "0")};
+  bottom: ${props => (props.fixed ? "2.5rem" : "0")};
+
+  ${media.lessThan("small")`
+    position: relative;
+    bottom: ${props => (props.fixed ? "-2.5rem" : "0")};
+  `}
 `
 
 export const SocialLinksTitle = styled.h3`
