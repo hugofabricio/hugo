@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const ButtonLink = styled(AniLink)`
@@ -31,6 +32,13 @@ export const ButtonLink = styled(AniLink)`
     color: var(--buttonTextColorHover);
     background-color: var(--buttonBackgroundHover);
   }
+
+  ${media.lessThan("medium")`
+    font-size: 0.75rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    padding: 0 1.563rem;
+  `}
 `
 
 export const ButtonWrapper = styled.span``

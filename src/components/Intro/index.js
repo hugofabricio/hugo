@@ -9,7 +9,12 @@ const Intro = ({ title, slogan, button }) => (
   <S.IntroWrapper>
     <S.IntroTitle>{title}</S.IntroTitle>
     <S.IntroSlogan>{slogan}</S.IntroSlogan>
-    {button && <Button url={button.url} label={button.label} />}
+    <S.IntroContact>
+      <Button url="/contact" label="Let's talk" activeClassName="active" />
+    </S.IntroContact>
+    <S.IntroPortfolio>
+      {button && <Button url={button.url} label={button.label} />}
+    </S.IntroPortfolio>
   </S.IntroWrapper>
 )
 

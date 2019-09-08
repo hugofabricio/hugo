@@ -1,8 +1,11 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-export const BrandWrapper = styled.div``
+export const BrandWrapper = styled.div`
+  margin-right: 3rem;
+`
 
 export const BrandLink = styled(AniLink)`
   user-select: none;
@@ -14,6 +17,10 @@ export const BrandLogo = styled.h1`
   font-size: 5rem;
   font-weight: 700;
   text-transform: lowercase;
+
+  ${media.lessThan("medium")`
+    font-size: 3.75rem;
+  `}
 `
 
 export const BrandText = styled.span`

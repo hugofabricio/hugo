@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const WavesWrapper = styled.div`
   position: fixed;
@@ -8,20 +9,42 @@ export const WavesWrapper = styled.div`
   bottom: 0;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  overflow: hidden;
+
+  svg {
+    height: auto;
+  }
+
+  ${media.lessThan("medium")`
+    justify-content: flex-end;
+  `}
 `
 
 export const WavesWrapperLeft = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
   width: 50%;
-  height: 100%;
+
+  ${media.lessThan("large")`
+    width: 35%;
+  `}
+
+  ${media.lessThan("medium")`
+    display: none;
+  `}
 `
 
 export const WavesWrapperRight = styled.div`
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   width: 50%;
-  height: 100%;
+
+  ${media.lessThan("large")`
+    width: 35%;
+  `}
+
+  ${media.lessThan("medium")`
+    width: 95%;
+  `}
 `

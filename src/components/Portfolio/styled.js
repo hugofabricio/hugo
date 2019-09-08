@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const PortfolioWrapper = styled.section`
   position: relative;
@@ -14,6 +15,10 @@ export const PortfolioWrapper = styled.section`
 export const PortfolioHeader = styled.header`
   width: 60%;
   margin-bottom: 3rem;
+
+  ${media.lessThan("medium")`
+    width: 100%;
+  `}
 `
 
 export const PortfolioTitle = styled.h2`
@@ -21,6 +26,10 @@ export const PortfolioTitle = styled.h2`
   font-size: 3.75rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
+
+  ${media.lessThan("medium")`
+    font-size: 2.5rem;
+  `}
 `
 
 export const PortfolioSlogan = styled.p`
@@ -40,14 +49,22 @@ export const PortfolioList = styled.ul`
   width: 100%;
   color: var(--textColor);
   columns: 3;
+
+  ${media.lessThan("medium")`
+    columns: 1;
+  `}
 `
 
 export const PortfolioListItem = styled.li`
-  width: 50%;
+  width: 75%;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.125rem;
   margin-bottom: 1.375rem;
+
+  ${media.lessThan("medium")`
+    width: 100%;
+  `}
 `
 
 export const PortfolioListLink = styled.a`

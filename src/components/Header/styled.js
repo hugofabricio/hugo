@@ -2,12 +2,12 @@ import styled from "styled-components"
 
 export const HeaderWrapper = styled.header`
   width: 80%;
-  top: 0;
+  top: 4rem;
   left: 0;
   right: 0;
   position: fixed;
   z-index: 2;
-  margin: 4rem auto 6rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

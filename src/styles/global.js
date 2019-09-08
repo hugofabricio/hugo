@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import media from "styled-media-query"
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
@@ -90,6 +91,10 @@ const GlobalStyles = createGlobalStyle`
     color: var(--text);
     background-color: var(--background);
     margin: 0px;
+
+    ${media.lessThan("small")`
+      padding-top: 180px;
+    `}
   }
   a,
   button,

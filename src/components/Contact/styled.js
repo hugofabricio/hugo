@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const ContactWrapper = styled.section`
   position: relative;
@@ -14,6 +15,10 @@ export const ContactWrapper = styled.section`
 export const ContactHeader = styled.header`
   width: 70%;
   margin-bottom: 3rem;
+
+  ${media.lessThan("medium")`
+    width: 100%;
+  `}
 `
 
 export const ContactTitle = styled.h2`
@@ -21,6 +26,10 @@ export const ContactTitle = styled.h2`
   font-size: 3.75rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
+
+  ${media.lessThan("medium")`
+    font-size: 2.5rem;
+  `}
 `
 
 export const ContactSlogan = styled.p`
@@ -34,10 +43,17 @@ export const ContactContent = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  ${media.lessThan("medium")`
+    flex-direction: column;
+  `}
 `
 
 export const ContactCard = styled.div`
   color: var(--textColor);
+  ${media.lessThan("medium")`
+    margin-bottom: 2rem;
+  `}
 `
 
 export const ContactCardTitle = styled.h3`

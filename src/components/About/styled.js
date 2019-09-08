@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const AboutWrapper = styled.section`
   position: relative;
@@ -14,6 +15,10 @@ export const AboutWrapper = styled.section`
 export const AboutHeader = styled.header`
   width: 70%;
   margin-bottom: 3rem;
+
+  ${media.lessThan("medium")`
+    width: 100%;
+  `}
 `
 
 export const AboutTitle = styled.h2`
@@ -21,6 +26,10 @@ export const AboutTitle = styled.h2`
   font-size: 3.75rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
+
+  ${media.lessThan("medium")`
+    font-size: 2.5rem;
+  `}
 `
 
 export const AboutSlogan = styled.p`

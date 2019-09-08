@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const IntroWrapper = styled.section`
   position: relative;
@@ -10,6 +11,10 @@ export const IntroWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  ${media.lessThan("medium")`
+    align-items: flex-start;
+  `}
 `
 
 export const IntroTitle = styled.h2`
@@ -17,6 +22,14 @@ export const IntroTitle = styled.h2`
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
+
+  ${media.lessThan("large")`
+    font-size: 3.5rem;
+  `}
+
+  ${media.lessThan("medium")`
+    font-size: 2.5rem;
+  `}
 `
 
 export const IntroSlogan = styled.p`
@@ -24,4 +37,25 @@ export const IntroSlogan = styled.p`
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3rem;
+
+  ${media.lessThan("large")`
+    font-size: 1.5rem;
+  `}
+
+  ${media.lessThan("medium")`
+    font-size: 1rem;
+  `}
+`
+export const IntroContact = styled.div`
+  display: none;
+  ${media.lessThan("medium")`
+    display: block;
+  `}
+`
+
+export const IntroPortfolio = styled.div`
+  display: block;
+  ${media.lessThan("medium")`
+    display: none;
+  `}
 `
