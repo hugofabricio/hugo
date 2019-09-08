@@ -37,11 +37,6 @@ const links = [
   },
 
   {
-    label: "Construtora Equilíbrio",
-    url: "https://construtoraequilibrio.com.br",
-  },
-
-  {
     label: "Cultura Inglesa",
     url: "https://culturainglesapb.com.br",
   },
