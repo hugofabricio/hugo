@@ -20,14 +20,14 @@ class Waves extends Component {
       targets: this.wavesPath1,
       duration: 750,
       easing: "easeInOutQuad",
-      translateY: [445, 0],
+      translateY: ["100%", 0],
     })
 
     tl.add({
       targets: this.wavesPath2,
       duration: 1250,
       easing: "easeInOutQuad",
-      translateY: [445, 0],
+      translateY: ["100%", 0],
     })
   }
 

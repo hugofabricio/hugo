@@ -4,7 +4,7 @@ import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const BrandWrapper = styled.div`
-  margin-right: 3rem;
+  margin-right: 1.5rem;
 `
 
 export const BrandLink = styled(AniLink)`
