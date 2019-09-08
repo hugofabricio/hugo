@@ -13,7 +13,7 @@ export const IntroWrapper = styled.section`
   align-items: center;
 
   ${media.lessThan("medium")`
-    padding-bottom: 2rem;
+    padding-bottom: 0;
     align-items: flex-start;
   `}
 `
@@ -37,7 +37,7 @@ export const IntroSlogan = styled.p`
   color: var(--textColor);
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   ${media.lessThan("large")`
     font-size: 1.5rem;

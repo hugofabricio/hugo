@@ -5,7 +5,7 @@ export const SocialLinksWrapper = styled.div`
   overflow: hidden;
   position: ${props => (props.fixed ? "absolute" : "relative")};
   z-index: 2;
-  bottom: ${props => (props.fixed ? "3rem" : "0")};
+  bottom: ${props => (props.fixed ? "2rem" : "0")};
 `
 
 export const SocialLinksTitle = styled.h3`
